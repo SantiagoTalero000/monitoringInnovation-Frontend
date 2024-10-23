@@ -54,7 +54,13 @@ function Home() {
           >
             GPS CONTROL
           </a>
-          <Link className="text-[#01BEDB] font-medium">Link repo front</Link>
+          <a
+            className="text-[#01BEDB] font-medium"
+            href="https://github.com/SantiagoTalero000/monitoringInnovation-Frontend"
+            target="_blank"
+          >
+            Link repo front
+          </a>
           <Link className="text-[#01BEDB] font-medium">Link repo back</Link>
         </div>
       </div>
