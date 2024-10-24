@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const monitoringUrl = axios.create({
-  baseURL: "http://localhost:8000/api/monitoring/",
+  baseURL: "https://monitoringinnovation-backend.onrender.com/api/monitoring/",
 });
 
 export const getAllData = () => monitoringUrl.get("/");
