@@ -1,7 +1,6 @@
-import { Link, useNavigate } from "react-router-dom";
 import ImagoLogoMotion from "../Components/Icons/ImagoLogo_Motion";
 import TextBorder from "../Components/Partials/TextBorder";
-import { useEffect } from "react";
+import TelefonoImage from "/Telefono-01.png";
 
 function Home() {
   return (
@@ -18,7 +17,7 @@ function Home() {
             <TextBorder text={"Bienvenido a"} classNames={"text-8xl"} />
           </div>
           <img
-            src="/Telefono-01.png"
+            src={TelefonoImage}
             alt="Descripción"
             className="z-10 w-[100%] h-auto"
           />
