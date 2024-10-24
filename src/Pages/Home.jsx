@@ -4,16 +4,6 @@ import TextBorder from "../Components/Partials/TextBorder";
 import { useEffect } from "react";
 
 function Home() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const time = setTimeout(() => {
-      navigate("/inicio");
-    }, 6200);
-
-    return () => clearTimeout(time);
-  }, [navigate]);
-
   return (
     <>
       <div className="slide" />
@@ -30,7 +20,7 @@ function Home() {
           <img
             src="/Telefono-01.png"
             alt="Descripción"
-            className="z-10 w-full h-auto"
+            className="z-10 w-[100%] h-auto"
           />
           <div className="absolute inset-0 z-20 items-center justify-center hidden md:flex top-20">
             <TextBorder
@@ -61,7 +51,13 @@ function Home() {
           >
             Link repo front
           </a>
-          <Link className="text-[#01BEDB] font-medium">Link repo back</Link>
+          <a
+            className="text-[#01BEDB] font-medium"
+            href="https://github.com/SantiagoTalero000/monitoringInnovation-Backend"
+            target="_blank"
+          >
+            Link repo back
+          </a>
         </div>
       </div>
     </>
