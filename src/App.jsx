@@ -6,13 +6,13 @@ import { useEffect, useState } from "react";
 
 export default function App() {
   const [page, setPage] = useState(<Home />);
-  //   useEffect(() => {
-  //     const time = setTimeout(() => {
-  //       setPage(<Index />);
-  //     }, 6200);
+  useEffect(() => {
+    const time = setTimeout(() => {
+      setPage(<Index />);
+    }, 6200);
 
-  //     return () => clearTimeout(time);
-  //   }, []);
+    return () => clearTimeout(time);
+  }, []);
   return (
     <BrowserRouter basename="/monitoringinnovationfrontend">
       <AnimatePresence>
