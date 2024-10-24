@@ -18,7 +18,6 @@ export default function App() {
       <AnimatePresence>
         <Routes>
           <Route path="/" element={page} />
-          {/* <Route path="/inicio" element={<Index />} /> */}
         </Routes>
       </AnimatePresence>
     </BrowserRouter>
