@@ -4,7 +4,7 @@ const monitoringUrl = axios.create({
   baseURL: "https://monitoringinnovation-backend.onrender.com/api/monitoring/",
 });
 
-export const getAllData = () => monitoringUrl.get("/");
+export const getAllData = () => monitoringUrl.get("");
 
 export const createData = (data) => monitoringUrl.post("/", data);
 
